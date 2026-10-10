@@ -31,13 +31,13 @@ export default function AdminLayout() {
         <button type="button" className="icon-btn" onClick={() => setOpen(true)} aria-label="Open menu" aria-expanded={open}>
           ☰
         </button>
-        <span className="brand"><span aria-hidden="true">🎮</span> PartyPlay <small>Admin</small></span>
+        <span className="brand"><span aria-hidden="true">🎮</span> বাগমারা যুবগোষ্ঠী ক্লাব <small>Admin</small></span>
       </header>
 
       {open && <div className="drawer-scrim" onClick={() => setOpen(false)} />}
 
       <aside className={`sidebar${open ? ' is-open' : ''}`} aria-label="Admin navigation">
-        <div className="sidebar-brand brand"><span aria-hidden="true">🎮</span> PartyPlay <small>Admin</small></div>
+        <div className="sidebar-brand brand"><span aria-hidden="true">🎮</span> বাগমারা যুবগোষ্ঠী ক্লাব <small>Admin</small></div>
         <nav>
           {LINKS.map((link) => (
             <NavLink key={link.to} to={link.to} end={link.end}>

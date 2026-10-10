@@ -13,8 +13,8 @@ export default function PublicLayout() {
     <div className="public-shell">
       <a href="#main" className="skip-link">Skip to content</a>
       <header className="topbar">
-        <Link to="/" className="brand" aria-label="PartyPlay home">
-          <span aria-hidden="true">🎮</span> PartyPlay
+        <Link to="/" className="brand" aria-label="বাগমারা যুবগোষ্ঠী ক্লাব home">
+          <span aria-hidden="true">🎮</span> বাগমারা যুবগোষ্ঠী ক্লাব
         </Link>
         <nav className="topnav" aria-label="Main">
           {LINKS.map((link) => (

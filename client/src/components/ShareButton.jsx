@@ -7,7 +7,7 @@ export default function ShareButton({ path, title, className = 'btn btn-ghost bt
     const url = shareUrl(path);
     if (navigator.share) {
       try {
-        await navigator.share({ title, text: `Play "${title}" on PartyPlay`, url });
+        await navigator.share({ title, text: `Play "${title}" on বাগমারা যুবগোষ্ঠী ক্লাব`, url });
         return;
       } catch (error) {
         if (error?.name === 'AbortError') return; // user closed the share sheet
