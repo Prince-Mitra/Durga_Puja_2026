@@ -1,0 +1,17 @@
+{
+  "name": "party-game-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Interactive party game & voting platform with live first-click buzzer mode",
+  "scripts": {
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client",
+    "dev": "concurrently -n server,client -c magenta,cyan \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "build": "npm run build --prefix client",
+    "start": "npm start --prefix server",
+    "seed:admin": "npm run seed:admin --prefix server",
+    "test:race": "npm run test:race --prefix server"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
